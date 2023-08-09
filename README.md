@@ -4,6 +4,7 @@ In this application, I have implemented the Binary Search Tree algorithm, a fund
 Within this application, users can perform essential operations on the Binary Search Tree, enhancing their control over the data. These operations include node addition and deletion and the ability to obtain and display the tree's elements using different traversal methods.
 
 There are three primary types of traversal techniques available:
+
 **In-order Traversal:** This approach explores the left subtree first, followed by the parent node, and finally, the right subtree.
 
 **Pre-order Traversal:** Here, the parent node is visited first, followed by its left and then right subtrees.
@@ -20,7 +21,7 @@ By providing this application, users can gain a deeper understanding of Binary S
 
 •	npm
 
-**Initial installation: **
+**Initial installation:**
 
 •	Install React.js (npx create-react-app BinarySearchTree-Frontend)
 
@@ -28,17 +29,18 @@ By providing this application, users can gain a deeper understanding of Binary S
 
 Installation on the local machine:
 
-BinarySearchTree-Frontend - [https://github.com/VamshiGangadhar/BinarySearchTree-Frontend.git]([url](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend.git))
+[BinarySearchTree-Frontend](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend.git)
 
-BinarySearchTree-Backend - [https://github.com/VamshiGangadhar/BinarySearchTree-Server.git]([url](https://github.com/VamshiGangadhar/BinarySearchTree-Server.git))
+
+[BinarySearchTree-Backend](https://github.com/VamshiGangadhar/BinarySearchTree-Server.git)
 
 Initially create a folder and clone the repositories to the local machine
 
 **Commands:**
 
-•	git clone  [https://github.com/VamshiGangadhar/BinarySearchTree-Frontend.git]([url](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend.git))
+•	git clone  [https://github.com/VamshiGangadhar/BinarySearchTree-Frontend.git](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend.git)
 
-•	git clone  [https://github.com/VamshiGangadhar/BinarySearchTree-Server.git]([url](https://github.com/VamshiGangadhar/BinarySearchTree-Server.git))
+•	git clone  [https://github.com/VamshiGangadhar/BinarySearchTree-Server.git](https://github.com/VamshiGangadhar/BinarySearchTree-Server.git)
 
 After getting the folders into the local machine install the dependencies
 
