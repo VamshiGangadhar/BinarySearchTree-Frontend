@@ -1,0 +1,37 @@
+.bottom-box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    justify-content: space-between;
+    width: 30%;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+.mid-box{
+    display: flex;
+    margin-top: 30px;
+    min-width: 40%;
+    width: auto;
+    max-width: 80%;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+.top-box{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.traversal{
+    /* padding: 20px; */
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
