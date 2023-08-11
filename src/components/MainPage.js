@@ -12,6 +12,8 @@ import {
   Typography,
 } from "@mui/material";
 import Modal from "@mui/material/Modal";
+import TreeDiagram from "./TreeDiagram";
+
 const MainPage = () => {
   // assigning constants
   const [open, setOpen] = useState(false);
@@ -29,7 +31,9 @@ const MainPage = () => {
   const fetchTreeData = async () => {
     try {
       const response = await axios.get("http://localhost:3001/printtree");
+      console.log("response", response);
       setTreeData(response.data);
+      console.log(treeData);
     } catch (error) {
       console.error("Error fetching tree data:", error);
     }
@@ -37,7 +41,6 @@ const MainPage = () => {
   useEffect(() => {
     fetchTreeData();
   }, []);
-
   //add node
 
   const [canAddNode, setCanAddNode] = useState(false);
@@ -51,6 +54,7 @@ const MainPage = () => {
 
   const handleAddNode = async () => {
     try {
+      if(!adddata) return;
       const response = await axios.post("http://localhost:3001/add", {
         value: parseInt(adddata),
       });
@@ -60,6 +64,7 @@ const MainPage = () => {
     }
 
     fetchTreeData();
+    // window.location.reload();
   };
 
   // deleting the node
@@ -148,6 +153,7 @@ const MainPage = () => {
     p: 4,
     textAlign: "center",
   };
+
   return (
     <Box>
       <Typography
@@ -183,7 +189,7 @@ const MainPage = () => {
               }}
               variant="contained"
               onClick={handleAddNode}
-              disabled={!canAddNode}
+              // disabled={!canAddNode}
             >
               Add
             </Button>
@@ -226,7 +232,23 @@ const MainPage = () => {
           <MenuItem value="preorder">Pre-Order Traversal</MenuItem>
           <MenuItem value="postorder">Post-Order Traversal</MenuItem>
         </Select>
-
+        <TextField
+          placeholder="Search Node"
+          sx={{ width: "150px" }}
+          value={searchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
+          type="text"
+        />
+        <Button
+          variant="contained"
+          sx={{ color: "white" }}
+          onClick={searchNode}
+        >
+          Search
+        </Button>
+        <Button variant="contained" onClick={clearSearch}>
+          Clear
+        </Button>
         <Button
           variant="contained"
           sx={{
@@ -241,7 +263,7 @@ const MainPage = () => {
         <Paper
           sx={{
             padding: "10px",
-            width: "auto",
+            width: "80%",
             height: "auto",
             minWidth: "200px",
             minHeight: "200px",
@@ -252,30 +274,9 @@ const MainPage = () => {
           <Typography
             sx={{ textAlign: "center", margin: "10px", color: "green" }}
           >
-            Elements in Tree
+            Tree Structure
           </Typography>
-          {treeData.map((nodeValue) => (
-            <Box
-              key={nodeValue}
-              className={`node ${
-                selectedNode === nodeValue ? "selected" : ""
-              } ${searchResult?.value === nodeValue ? "searched" : ""}`}
-              onClick={() => handleNodeClick(nodeValue)}
-              style={{
-                textAlign: "center",
-                display: "inline-block",
-                alignItems: "center",
-                height: 30,
-                width: 30,
-                borderRadius: "5px",
-                // backgroundColor: "grey",
-                border: "1px solid grey",
-                margin: 5,
-              }}
-            >
-              {nodeValue}
-            </Box>
-          ))}
+          <TreeDiagram treeData={treeData} />
         </Paper>
 
         <Paper

@@ -1,0 +1,18 @@
+.tree-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .node {
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin: 4px;
+    display: inline-block;
+    background-color: #f7f7f7;
+  }
+  
+  .value {
+    font-weight: bold;
+  }
+  
+  /* Adjust the margin based on your preferred spacing */
+  
