@@ -110,7 +110,7 @@ State Variables
 
 Click "ADD NODE": Start by clicking the "ADD NODE" button available on the main interface. Enter Node Value: A new window, known as a modal, will pop up. Here, you'll find a space to enter the value of the node you want to add. And then click on ADD.
 
-![image](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend/assets/80575671/fb5d3773-1ce6-4dac-80c1-f5e76e8b853e)
+![image](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend/assets/80575671/55bed770-b097-410c-b05c-1e7096453f09)
 
 Figure 2: add node
 
@@ -118,7 +118,7 @@ Deleting the node:
 
 Click "DELETE NODE": Start by clicking the "DELETE NODE" button on the main screen.Enter Node Value: A box will pop up. Type in the value of the node you want to delete. And then click on delete.
 
-![image](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend/assets/80575671/d7a885f5-1b28-45b7-ba8f-009bc8b11274)
+![image](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend/assets/80575671/5e656a91-8dd9-466c-a3c4-666f68511b48)
 
 Figure 3: delete node
 
@@ -128,7 +128,7 @@ Figure 3: delete node
 
 For printing in-order traversal, we have to select the drop-down menu and select the in-order option the we can find the traversal in the Selected Traversal Data box.
 
-![image](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend/assets/80575671/c0c12f21-4015-439f-9b83-c274f2683f5f)
+![image](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend/assets/80575671/a0a884ea-d625-45a4-83ab-73a11b1865cf)
 
 Figure 4: In-order traversal
 
@@ -136,7 +136,7 @@ Figure 4: In-order traversal
 
 For printing pre-order traversal, we have to select the drop-down menu and select the pre-order option the we can find the traversal in the Selected Traversal Data box.
 
-![image](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend/assets/80575671/dc206614-a7cc-438f-ac42-d103300d080d)
+![image](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend/assets/80575671/5c9bde78-8bf8-4538-a84a-fd94f7d0f105)
 
 Figure 5: Pre-order traversal
 
@@ -144,15 +144,16 @@ Figure 5: Pre-order traversal
 
 For printing post-order traversal, we have to select the drop-down menu and select the post-order option the we can find the traversal in the Selected Traversal Data box.
 
-![image](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend/assets/80575671/fa15bdf3-4307-4b99-a7a0-5f8a641cf03a)
+![image](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend/assets/80575671/eb922614-9bbb-4f2a-98f4-97572c4b5167)
 
 Figure 6: post-order traversal
 
 **Searching the node:**
 
 If we want to search the node then we have to enter the node value and click on search then we can find the popup opened and details of the particular node
-![image](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend/assets/80575671/f24c06c2-01c3-4246-8bf4-4229528ad45f)
+
+![image](https://github.com/VamshiGangadhar/BinarySearchTree-Frontend/assets/80575671/21445861-1541-45eb-b134-48c71a3828c8)
 
 Figure 7: Search node
 
-Complete Project Video Link - [Project Video](https://drive.google.com/file/d/1SZmSWjfmvTXIOcn4FNfXQppdbjG0pdXh/view?usp=sharing)
+Complete Project Video Link - [Project Video](https://drive.google.com/file/d/1WW-65VpmwOKyx2Iamw8rZ_lQTX95SJXS/view?usp=sharing)
